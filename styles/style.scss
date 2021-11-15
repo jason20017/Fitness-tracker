@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  // border: red 1px solid !important;
+  // background-color: black !important;
+  // color: white !important;
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+h1 {
+  margin: 1rem 0 1rem 5rem;
+  font-size: 3.5rem;
+}
+form {
+  margin: 1rem 0 1rem 5rem;
+  display: flex;
+  justify-content: start;
+  input {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+  button {
+    font-size: 1.8rem;
+    font-family: "Mochiy Pop One", sans-serif;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 0 0 5rem;
+  z-index: 1;
+
+  .newItem {
+    border: black 3px solid !important;
+    width: 60vw;
+    display: flex;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+
+    .newItem_left {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 1.5rem;
+      color: rgb(0, 0, 0);
+      .deleteButton {
+        font-size: 1.5rem;
+        font-family: "Mochiy Pop One", sans-serif;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 0.5rem;
+      }
+    }
+
+    .newItem_right {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      padding-left: 0.5rem;
+
+      .input_list {
+        display: flex;
+        flex-direction: row;
+        .input_term {
+          width: 45%;
+          font-size: 1.5rem;
+        }
+        .input_weight {
+          width: 15%;
+          font-size: 1.5rem;
+        }
+        .input_rep {
+          width: 10%;
+          font-size: 1.5rem;
+        }
+        .input_set {
+          width: 10%;
+          font-size: 1.5rem;
+        }
+        .addRecord {
+          width: 15%;
+          font-size: 1.5rem;
+          font-family: "Mochiy Pop One", sans-serif;
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 0.3);
+          padding: 0.5rem;
+        }
+      }
+
+      .show_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        padding-left: 0.5rem;
+        margin: 0.5rem;
+        .show_term {
+          width: 45%;
+          font-size: 1.5rem;
+        }
+        .show_weight {
+          width: 15%;
+          font-size: 1.5rem;
+        }
+        .show_rep {
+          width: 10%;
+          font-size: 1.5rem;
+        }
+        .show_set {
+          width: 10%;
+          font-size: 1.5rem;
+        }
+        .deleteList {
+          width: 15%;
+          font-size: 1.1rem;
+          font-family: "Mochiy Pop One", sans-serif;
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 0.3);
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    font-family: "Mochiy Pop One", sans-serif;
+  }
+
+  h1 {
+    margin: 1rem 0 1rem 0rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  form {
+    margin: 1rem 0 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    input {
+      font-size: 1.25rem;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      cursor: pointer;
+    }
+    button {
+      font-size: 1.4rem;
+      font-family: "Mochiy Pop One", sans-serif;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 0.3rem;
+    z-index: 1;
+
+    .newItem {
+      border: black 3px solid !important;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+
+      .newItem_left {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.2rem;
+        color: rgb(0, 0, 0);
+        .deleteButton {
+          font-size: 1rem;
+          font-family: "Mochiy Pop One", sans-serif;
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 0.3);
+          padding: 0.5rem;
+        }
+      }
+
+      .newItem_right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0.5rem;
+
+        .input_list {
+          display: flex;
+          flex-direction: row;
+          .input_term {
+            width: 45%;
+            font-size: 1.1rem;
+          }
+          .input_weight {
+            width: 15%;
+            font-size: 1.1rem;
+          }
+          .input_rep {
+            width: 10%;
+            font-size: 1.1rem;
+          }
+          .input_set {
+            width: 10%;
+            font-size: 1.1rem;
+          }
+          .addRecord {
+            width: 15%;
+            font-size: 1.1rem;
+            font-family: "Mochiy Pop One", sans-serif;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 0.5rem;
+          }
+        }
+
+        .show_list {
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          align-items: center;
+          padding-left: 0.5rem;
+          margin: 0.5rem;
+          .show_term {
+            width: 45%;
+            font-size: 1.1rem;
+          }
+          .show_weight {
+            width: 15%;
+            font-size: 1.1rem;
+            text-align: start;
+          }
+          .show_rep {
+            width: 10%;
+            font-size: 1.1rem;
+            text-align: start;
+            color: blue;
+          }
+          .show_set {
+            width: 10%;
+            font-size: 1.1rem;
+            text-align: start;
+            color: red;
+          }
+          .deleteList {
+            width: 17.5%;
+            font-size: 0.8rem;
+            font-family: "Mochiy Pop One", sans-serif;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
